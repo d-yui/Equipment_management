@@ -11,3 +11,11 @@
 /log/*
 !/log/.keep
 /tmp
+/**/.DS_Store
+/.env
+
+/config/database.yml
+
+.ruby-version
+/public/assets/
+/coverage

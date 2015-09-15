@@ -1,0 +1,31 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: localhost
+  charset: utf8
+  collation: utf8_general_ci
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: Equipment_management_development
+
+test:
+  <<: *default
+  database: Equipment_management_test
+
+staging:
+  <<: *default
+  database: Equipment_management_staging
+  username: Equipment_management
+  password: *****
+
+production:
+  <<: *default
+  database: Equipment_management_production
+  username: Equipment_management
+  password: *****
